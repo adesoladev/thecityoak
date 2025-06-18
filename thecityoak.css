@@ -1,0 +1,198 @@
+/* VARIABLES STYLES */
+:root {
+  /* TEXT VARIABLES */
+  --text-dark: #000;
+  --text-light: #fff;
+  --body-font: "poppins", sans-serif;
+  --heading-font: "outfit", sans-serif;
+
+  /* COLOR VARIABLES */
+  --accent-color: #07485b;
+}
+
+/* GENERAL ELEMENTS STYLES */
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--text-light);
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font);
+}
+
+/* NAV SECTION */
+nav {
+  position: absolute; /* Make nav float on top */
+  top: 20px; /* This adds the space you want */
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-radius: 50px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 32px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero {
+  height: 100vh;
+  width: auto;
+  padding: 0 64px;
+  background-image: url("Images/oak.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background-color: #031e44;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.15);
+}
+
+/* HERO CONTENT SECTION */
+.hero-content {
+  padding-top: 8.5rem;
+  color: #fff;
+}
+
+.hero-heading span {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-heading span i {
+  color: #ffd700;
+}
+
+.hero-heading h2 {
+  width: 35%;
+  font-size: 2.3rem;
+  font-weight: 400;
+
+  /* font-size: 30px; */
+  margin-bottom: 0;
+}
+
+.hero-heading p {
+  width: 40%;
+  line-height: 22px;
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.hero-stats p {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-verified {
+  line-height: 0.8rem;
+}
+
+.number {
+  border-right: 1.5px solid #fff;
+  padding: 0 20px;
+}
+
+.verified-properties {
+  padding-left: 0;
+}
+
+.average-rating {
+  padding-left: 20px;
+}
+
+.average-rating span {
+  color: #ffd700;
+}
+
+/* SEARCH BAR SECTION */
+.search-form {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 80px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-group select,
+.form-group input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-group button {
+  padding: 12px 20px;
+  background-color: #042d62;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-group button:hover {
+  transform: scale(0.95);
+}

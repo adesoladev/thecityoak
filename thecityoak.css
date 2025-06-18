@@ -182,6 +182,26 @@ nav ul li {
   border-radius: 6px;
 }
 
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper i {
+  position: absolute;
+  left: 12px;
+  color: #666;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.input-wrapper select,
+.input-wrapper input {
+  width: 100%;
+  padding-left: 38px !important;
+}
+
 .form-group button {
   padding: 12px 20px;
   background-color: #042d62;

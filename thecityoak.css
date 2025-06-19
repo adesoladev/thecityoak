@@ -83,6 +83,7 @@ nav ul li {
 .hero-content {
   padding-top: 8.5rem;
   color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
 .hero-heading span {
@@ -150,7 +151,8 @@ nav ul li {
   border-radius: 12px;
   max-width: 900px;
   margin: 80px auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 5px 41px -16px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .search-form form {
@@ -215,4 +217,65 @@ nav ul li {
 
 .form-group button:hover {
   transform: scale(0.95);
+}
+
+/* ABOUT US SECTION */
+.about-us-container {
+  padding: 40px 64px;
+  display: flex;
+}
+
+.about-us-left {
+  width: 40%;
+}
+
+.about-us-left h3 {
+  font-size: 29px;
+  font-weight: 400;
+  width: 90%;
+}
+
+.about-us-left p {
+  width: 85%;
+}
+
+.about-us-right {
+  width: 60%;
+}
+
+.about-us-right h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.about-us-right .mission-statement p {
+  width: 90%;
+}
+
+.about-us-right-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-us-right-card {
+  background-color: #cde7f0;
+  color: black;
+  margin: 0;
+  padding: 10px 20px;
+  width: 280px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-us-right-card span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #042d62;
+  padding-bottom: 10px;
+}
+
+.about-us-right-card p {
+  margin: 0;
 }
